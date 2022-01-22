@@ -1,8 +1,8 @@
-import { helloWorld } from './index';
+const app = require('./App.ts');
 
-describe('typeScript test suite', () => {
-  it('should return "Hello world!"', () => {
+describe('Jeu de test serveur http', () => {
+  it('', () => {
     expect.assertions(1);
-    expect(helloWorld()).toBe('Hello world!');
+    expect().toBe('');
   });
 });
