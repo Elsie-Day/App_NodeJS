@@ -1,4 +1,3 @@
-
 const si = require('systeminformation');
 //const { resourceLimits } = require('worker_threads');
 
@@ -55,3 +54,5 @@ const server = http.createServer(requestListner);
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/api/v1/sysinfo`);
 });
+
+module.exports = server
