@@ -3,7 +3,7 @@ const si = require('systeminformation');
 
 const http = require('http');
 const hostname = 'localhost';
-const port = 8089;
+const port = 8080;
 const result = [];
 
 
@@ -49,8 +49,8 @@ const requestListner = async function(req, res) {
   
 };
   
-export const server = http.createServer(requestListner);
+const server = http.createServer(requestListner);
   
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/api/v1/sysinfo`);
-});
+server.listen(process.env.PORT || port);
+
+

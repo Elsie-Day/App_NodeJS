@@ -1,16 +1,16 @@
 import { request } from 'http';
-import { server } from './App';
+//import { server } from './App';
 
 const optionsOk = {
   hostname: 'localhost',
-  port: 8089,
+  port: 8080,
   path: '/api/v1/sysinfo',
   method: 'GET'
 };
 
 const optionsKo = {
   hostname: 'localhost',
-  port: 8089,
+  port: 8080,
   path: '/',
   method: 'GET'
 };
